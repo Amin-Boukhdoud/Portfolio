@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.lcontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    border-radius: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffff;
+    padding: 30px 60px 10px;
+    text-align: center;
+
+}
+
+.form-box h1{ /* title  */
+    font-size: 30px;
+    margin-bottom: 40px;
+    color:#3c00a0;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #aeaeae;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;    
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+.gender-field {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender-field label {
+    margin-right: 10px;
+}
+#dob { 
+    margin: 15px 0;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btn-field button{
+    width: 48%;
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #ffff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 350px;
+}
+
+.btn-field button.disable{
+    background: #aeaeae;
+    color: #555;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.error, .success {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error {
+    font-size: large;
+    color: #FF0000; /* Red text for error */
+}
+
+.success {
+    font-size: large;
+    color: #008000; /* Green text for success */
+}
