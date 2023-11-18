@@ -1,3 +1,18 @@
+<?php
+    session_start();    
+
+    if(!isset($_SESSION['user'])){
+		header("location: signin.php");
+        exit();
+	}
+
+	if(isset($_GET['logout'])){
+		unset($_SESSION['user']);
+		header("location: signin.php");
+        exit();
+	}
+
+?>
 <html>
     <head>
         <title>
@@ -35,5 +50,14 @@
                     ">
                 My 1st Page
             </h1>
+
+            <div class="welcome">
+                <header>
+                <h2>Welcome <?php echo $_SESSION['user']; ?> </h2>
+                <a href="?logout">Log out</a>
+                </header>
+
+                <main></main>
+            </div>
     </body>
 </html>

@@ -1,42 +1,10 @@
 [
     {
-        "username": "johndoe",
-        "firstname": "john",
-        "lastname": "doe",
-        "gender": "female",
-        "dob": "2023-11-29",
-        "password": "$2y$10$pvWfmcpb0d45utngtqF1IeVajB6bPjqK5K75Uxburbr2sdgVqu0Va"
-    },
-    {
-        "username": "amin.boukhdoud",
-        "firstname": "amin",
-        "lastname": "boukhdoud",
+        "username": "aminbkh",
+        "firstname": "Amin",
+        "lastname": "boukdhoud",
         "gender": "male",
-        "dob": "2021-10-27",
-        "password": "$2y$10$YV9SBqVSqAL471KkJZs0Q.5nSeTvz3ZXRJXexwUpZPdxvhlVIdwfG"
-    },
-    {
-        "username": "amin.boukdhoud",
-        "firstname": "sad",
-        "lastname": "sadas",
-        "gender": "male",
-        "dob": "2023-12-02",
-        "password": "$2y$10$jx3N6rACygrwxnnhDYR0SuMwaATkJU4.XWX3iFiHZ7tl85HiBdOwa"
-    },
-    {
-        "username": "amin.boukdoud",
-        "firstname": "123",
-        "lastname": "1322",
-        "gender": "female",
-        "dob": "2023-11-15",
-        "password": "$2y$10$6bMMs.bSKDjKENznqyPBfuN76Zdo9PcmyfamdOa1YdcfIWxZmwZl2"
-    },
-    {
-        "username": "sss",
-        "firstname": "ss",
-        "lastname": "ss",
-        "gender": "male",
-        "dob": "2023-11-17",
-        "password": "$2y$10$nQzH2HWbB8.rLgxYGZNZluyBj5EjSn8BdAU6Ytle9cdDIUYnLnsS6"
+        "dob": "2023-11-24",
+        "password": "$2y$10$PfpDbvrfubs0vT5xU5TUo.oDiGPHG1\/xLmlLiHQS9gzBBeLwQxVhq"
     }
 ]

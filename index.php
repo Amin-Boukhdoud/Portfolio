@@ -59,7 +59,9 @@
             </div>
             <div class="btn-field">
                 <button type="submit"  name="submit" id="signupbtn">Sign Up</button>
-                <button type="button" id="signinbtn" class="disable">Sign In</button>
+                    <a href="pages/signin.php", style="width: 170px;">
+                    <button type="button" id="signinbtn" class="disable">Sign In</button>
+                </a>
             </div>   
         </form>
         <div id="message">
