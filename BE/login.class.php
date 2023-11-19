@@ -1,6 +1,7 @@
 <?php
-class LoginUser{
+ob_start();
 
+class LoginUser {
     private $username; 
     private $password;
     public $error;
@@ -30,7 +31,4 @@ class LoginUser{
         return $this->error = "Wrong username or password";
      }
 }
-    
-
-
 ?>

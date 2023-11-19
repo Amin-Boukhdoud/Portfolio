@@ -1,17 +1,16 @@
 <?php
-    session_start();    
+session_start();
 
-    if(!isset($_SESSION['user'])){
-		header("location: signin.php");
-        exit();
-	}
+if (!isset($_SESSION['user'])) {
+    header("location: signin.php");
+    exit();
+}
 
-	if(isset($_GET['logout'])){
-		unset($_SESSION['user']);
-		header("location: signin.php");
-        exit();
-	}
-
+if (isset($_GET['logout'])) {
+    unset($_SESSION['user']);
+    header("location: signin.php");
+    exit();
+}
 ?>
 <html>
     <head>
