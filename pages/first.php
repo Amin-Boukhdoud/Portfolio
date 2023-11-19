@@ -50,13 +50,21 @@ if (isset($_GET['logout'])) {
                 My 1st Page
             </h1>
 
-            <div >
+            <div>
                 <header class="fw">
                 <h2 >Welcome <?php echo $_SESSION['user']; ?> </h2>
                 <a href="?logout">Log out</a>
                 </header>
-
-                <main></main>
             </div>
+            
+        <h1>Click the button for a surprise!</h1>
+
+        <button onclick="ss()" class="suprise">Click me!</button>
+
+<script>
+     function ss() {
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s';
+    }
+</script>
     </body>
 </html>

@@ -9,11 +9,23 @@ h2{
     color: #7a0800;
     text-decoration: underline;
 }
+h1{
+    text-align: center;
+}
 p{
     font-family: monospace;
     font-size: 15px;
 }
-
+.suprise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 47%;
+    width: 80px;
+    height: 50px;
+}
+.suprise button{
+}
 
 
 .row{
