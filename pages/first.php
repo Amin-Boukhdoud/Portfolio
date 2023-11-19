@@ -27,16 +27,16 @@
                 <span><i class="ico burger-ico"></i>MENU</span>
                 <div class="dropdown-content">
                     <ul>
-                        <a href="first.html">
+                        <a href="first.php">
                             <li>Home<i class="ico ico-l user-ico"></i></li>
                         </a>
-                        <a href="cv.html">
+                        <a href="cv.php">
                             <li>CV<i class="ico ico-l wallet-ico"></i></li>
                         </a>
-                        <a href="Gallery.html">
+                        <a href="Gallery.php">
                             <li>Gallery<i class="ico ico-l gallery-ico"></i></li>
                         </a>
-                        <a href="about.html">
+                        <a href="about.php">
                             <li>About<i class="ico ico-l wallet-ico"></i></li>
                         </a>
                     </ul>
@@ -51,9 +51,9 @@
                 My 1st Page
             </h1>
 
-            <div class="welcome">
-                <header>
-                <h2>Welcome <?php echo $_SESSION['user']; ?> </h2>
+            <div >
+                <header class="fw">
+                <h2 >Welcome <?php echo $_SESSION['user']; ?> </h2>
                 <a href="?logout">Log out</a>
                 </header>
 

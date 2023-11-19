@@ -15,7 +15,8 @@ body{
 }
 .container
 {
-    position: relative;
+    position: absolute;
+    margin-top: 55%;
     width: 100%;
     max-width: 1000px;
     min-height: 800px;
@@ -232,8 +233,12 @@ p
 #header{
     background: rgb(32, 97, 163);
     height: 40px;
-    position: fixed;
+    position: absolute;
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #dropdown-menu{
@@ -322,9 +327,17 @@ p
     text-decoration: none;
 }
 
-.content{
-    margin-top: 48px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content,
+.center-content {
+    padding: 0 10px;
+}
+
+.right-content a {
+    text-decoration: none;
+    color: white;
 }

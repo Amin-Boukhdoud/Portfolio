@@ -9,11 +9,12 @@ body {
 }
 h2
 {
-	text-align: center;
+	text-align: center; 
 }
 .wrapper {
     width: 45%; 
     margin: 10% auto;
+    display: flex;
 }
 
 .img-area {
@@ -57,4 +58,9 @@ img {
         grid-template-rows: repeat(1, 40vh); 
         grid-template-columns: repeat(3, 40vh);
     }
+}
+.gt{
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
 }

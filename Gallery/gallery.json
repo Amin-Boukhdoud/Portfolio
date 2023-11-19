@@ -1,0 +1,16 @@
+{
+    "images": [
+        {
+            "url": "/Gallery/image1.jpg",
+            "alt": "Image 1"
+        },
+        {
+            "url": "/Gallery/image2.jpg",
+            "alt": "Image 2"
+        },
+        {
+            "url": "/Gallery/image3.jpg",
+            "alt": "Image 3"
+        }
+        ]
+}
