@@ -1,10 +1,24 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("location: signin.php");
+    exit();
+}
+
+if (isset($_GET['logout'])) {
+    unset($_SESSION['user']);
+    header("location: signin.php");
+    exit();
+}
+?>
 <html>
     <head>
         <title>
             My 1st Page
         </title>
-        <link rel="stylesheet" href="css/mStyle.css">
-        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="../css/mStyle.css">
+        <link rel="stylesheet" href="../css/icons.css">
     </head>
     <body>
         <div class="row" id="header">
@@ -12,16 +26,16 @@
                 <span><i class="ico burger-ico"></i>MENU</span>
                 <div class="dropdown-content">
                     <ul>
-                        <a href="index.html">
+                        <a href="first.php">
                             <li>Home<i class="ico ico-l user-ico"></i></li>
                         </a>
-                        <a href="pages/cv.html">
+                        <a href="cv.php">
                             <li>CV<i class="ico ico-l wallet-ico"></i></li>
                         </a>
-                        <a href="pages/Gallery.html">
+                        <a href="Gallery.php">
                             <li>Gallery<i class="ico ico-l gallery-ico"></i></li>
                         </a>
-                        <a href="pages/about.html">
+                        <a href="about.php">
                             <li>About<i class="ico ico-l wallet-ico"></i></li>
                         </a>
                     </ul>
@@ -35,5 +49,22 @@
                     ">
                 My 1st Page
             </h1>
+
+            <div>
+                <header class="fw">
+                <h2 >Welcome <?php echo $_SESSION['user']; ?> </h2>
+                <a href="?logout">Log out</a>
+                </header>
+            </div>
+            
+        <h1>Click the button for a surprise!</h1>
+
+        <button onclick="ss()" class="suprise">Click me!</button>
+
+<script>
+     function ss() {
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s';
+    }
+</script>
     </body>
 </html>
